@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>mysadlittlegarden</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./assets/favicon/site.webmanifest" />
+  </head>
+  <body>
+    <header>
+      <div class="wrp">
+        <img id="logo" src="./assets/img/logo-t.png" alt="logo" />
+        <h1>my<span class="bold">sad</span>littlegarden</h1>
+      </div>
+    </header>
+
+    <main>
+      <div class="wrp">
+        <section id="links-wrp">
+          <a
+            href="https://www.instagram.com/mysadlittlegarden/"
+            target="_blank"
+          >
+            <img
+              src="./assets/icons/instagram.svg"
+              alt="icone do instagram"
+              width="30"
+            />
+          </a>
+          <a href="https://github.com/wendellduos/" target="_blank">
+            <img
+              src="./assets/icons/github.svg"
+              alt="icone do github"
+              width="35"
+            />
+          </a>
+          <a href="https://www.linkedin.com/in/wendellduos/" target="_blank">
+            <img
+              src="./assets/icons/linkedin.svg"
+              alt="icone do linkedin"
+              width="35"
+            />
+          </a>
+        </section>
+
+        <section id="phrase-wrp">
+          <div id="personal-wrp">
+            <img
+              id="profle-photo"
+              src="./assets/img/profile.jpg"
+              alt="foto de perfil"
+            />
+            <h2>Wendel Duarte</h2>
+          </div>
+          <p class="bold" id="phrase">
+            Que minhas sutis contribuições tragam um pouco de paz e alegria a
+            este mundo conturbado.
+          </p>
+          <a href="./about">Sobre mim</a>
+        </section>
+        <br />
+        <br />
+        <section>
+          <h2 class="title">Projetos</h2>
+          <div class="mini-title-wrp">
+            <img
+              class="mini-title-icon"
+              src="./assets/icons/music.svg"
+              alt="icone de nota musical"
+            />
+            <h3 class="mini-title">Música</h3>
+          </div>
+          <p>
+            Fã de Sound Design, faço uso de sintetizadores e pós-processamento
+            para alcançar os mais diversos sons e texturas.
+          </p>
+          <audio src="./assets/music/windchime.mp3"></audio>
+          <audio src="./assets/music/motion.mp3"></audio>
+          <audio src="./assets/music/drown.mp3"></audio>
+          <audio src="./assets/music/caier.mp3"></audio>
+          <div id="music-player" class="dark-block">
+            <div id="player-controls">
+              <button
+                type="button"
+                id="previous-btn"
+                class="player-btn"
+              ></button>
+              <button
+                type="button"
+                id="play-pause-btn"
+                class="player-btn"
+              ></button>
+              <button type="button" id="next-btn" class="player-btn"></button>
+            </div>
+            <div id="player-timeline"></div>
+          </div>
+
+          <div class="mini-title-wrp">
+            <img
+              class="mini-title-icon"
+              src="./assets/icons/square-code.svg"
+              alt="icone de programação"
+            />
+            <h3 class="mini-title">Programação</h3>
+          </div>
+          <p>
+            Familiar com tecnologias relacionadas ao Desenvolvimento Web, com
+            foco em Front-End.
+          </p>
+
+          <div class="mini-title-wrp">
+            <img
+              src="./assets/icons/camera.svg"
+              alt="icone de camera fotográfica"
+            />
+            <h3 class="mini-title">Galeria</h3>
+          </div>
+          <p>
+            A captura da imagem é somente um passo do processo. Considero a
+            Color Correction essencial para alcançar sentimentos visuais na
+            fotografia.
+          </p>
+        </section>
+      </div>
+    </main>
+    <script src="./main.js"></script>
+    <script src="./player.js"></script>
+  </body>
+</html>

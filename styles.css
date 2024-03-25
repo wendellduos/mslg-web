@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css2?family=Wix+Madefor+Text:ital,wght@0,400..800;1,400..800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+  font-family: "Wix Madefor Text", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.title {
+  text-align: center;
+  font-weight: 700;
+}
+
+.mini-title {
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.wrp {
+  max-width: 700px;
+  margin: auto;
+  padding: 0 1rem;
+}
+
+.mini-title-wrp {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0.5rem 0;
+}
+
+.dark-block {
+  position: relative;
+  padding: 2rem;
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(5px);
+}
+
+.clicked {
+  transform: scale(90%);
+}
+
+p {
+  letter-spacing: 0.3px;
+  line-height: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+body {
+  height: 100vh;
+  background-image: radial-gradient(circle at 100%, #200e25, #18141a);
+}
+
+header .wrp {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  height: 5rem;
+  padding: 0 1rem;
+}
+
+#logo {
+  width: 2rem;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+#phrase {
+  line-height: 2.5rem;
+  margin-bottom: 0;
+}
+
+#links-wrp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin: 2rem 0 3rem 0;
+}
+
+#links-wrp a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4rem;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.02);
+  transition: background-color 0.2s ease-out;
+}
+
+#links-wrp a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+#phrase-wrp {
+  position: relative;
+  padding: 2rem;
+  border-radius: 15px;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.02),
+    rgba(255, 255, 255, 0)
+  );
+  backdrop-filter: blur(5px);
+}
+
+#phrase-wrp::after {
+  content: "";
+  position: absolute;
+  top: 25%;
+  left: 65%;
+  width: 30%;
+  aspect-ratio: 1/1;
+  background-image: url("./assets/icons/quote.svg");
+  background-size: contain;
+  opacity: 0.06;
+}
+
+#personal-wrp {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+#profle-photo {
+  width: 3rem;
+  border-radius: 50%;
+  transform: rotate(-6deg);
+}
+
+#personal-wrp h2 {
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+#phrase-wrp p {
+  font-size: 2rem;
+}
+
+#phrase-wrp a {
+  line-height: 4rem;
+}
+
+#music-player {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 4rem;
+}
+
+#player-controls button {
+  border: none;
+  background-color: transparent;
+  background-size: contain;
+  opacity: 0.75;
+  transition: opacity 0.2s ease-out;
+  cursor: pointer;
+}
+
+#player-controls {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+#player-controls button:hover {
+  opacity: 1;
+}
+
+#player-controls button:nth-child(1),
+#player-controls button:nth-child(3) {
+  width: 1.5rem;
+  aspect-ratio: 1/1;
+}
+
+#player-controls button:nth-child(1) {
+  background-image: url("./assets/icons/previous.svg");
+}
+
+#player-controls button:nth-child(3) {
+  background-image: url("./assets/icons/next.svg");
+}
+
+#player-controls button:nth-child(2) {
+  width: 2.5rem;
+  aspect-ratio: 1/1;
+  background-image: url("./assets/icons/play.svg");
+}
+
+#player-timeline {
+  width: 100%;
+  height: 0.2rem;
+  border-radius: 5px;
+  background-image: linear-gradient(to right, white 0%, transparent 0%);
+  opacity: 0.75;
+}
