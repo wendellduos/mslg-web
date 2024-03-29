@@ -27,24 +27,32 @@
   <body>
     <header>
       <div class="wrp">
-        <img id="logo" src="./assets/img/logo-t.png" alt="logo" />
+        <img id="logo" src="./assets/img/clover-t-white.svg" alt="logo" />
         <h1>my<span class="bold">sad</span>littlegarden</h1>
       </div>
     </header>
 
     <main>
       <div class="wrp">
-        <section id="links-wrp">
-          <a
-            href="https://www.instagram.com/mysadlittlegarden/"
-            target="_blank"
-          >
+        <section id="phrase-wrp">
+          <p class="bold" id="phrase">
+            Que minhas sutis contribuições tragam um pouco de paz e alegria a
+            este mundo conturbado.
+          </p>
+          <div id="personal-wrp">
             <img
-              src="./assets/icons/instagram.svg"
-              alt="icone do instagram"
-              width="30"
+              id="profle-photo"
+              src="./assets/img/profile.jpeg"
+              alt="foto de perfil"
             />
-          </a>
+            <div>
+              <h2>Wendel Duarte</h2>
+              <a href="./about">Sobre mim</a>
+            </div>
+          </div>
+        </section>
+
+        <section id="links-wrp">
           <a href="https://github.com/wendellduos/" target="_blank">
             <img
               src="./assets/icons/github.svg"
@@ -59,24 +67,25 @@
               width="35"
             />
           </a>
+          <a
+            href="https://www.instagram.com/mysadlittlegarden/"
+            target="_blank"
+          >
+            <img
+              src="./assets/icons/instagram.svg"
+              alt="icone do instagram"
+              width="30"
+            />
+          </a>
+          <a href="" target="_blank">
+            <img
+              src="./assets/icons/spotify.svg"
+              alt="icone do spotify"
+              width="30"
+            />
+          </a>
         </section>
 
-        <section id="phrase-wrp">
-          <div id="personal-wrp">
-            <img
-              id="profle-photo"
-              src="./assets/img/profile.jpg"
-              alt="foto de perfil"
-            />
-            <h2>Wendel Duarte</h2>
-          </div>
-          <p class="bold" id="phrase">
-            Que minhas sutis contribuições tragam um pouco de paz e alegria a
-            este mundo conturbado.
-          </p>
-          <a href="./about">Sobre mim</a>
-        </section>
-        <br />
         <br />
         <section>
           <h2 class="title">Projetos</h2>
@@ -92,11 +101,13 @@
             Fã de Sound Design, faço uso de sintetizadores e pós-processamento
             para alcançar os mais diversos sons e texturas.
           </p>
-          <audio src="./assets/music/windchime.mp3"></audio>
-          <audio src="./assets/music/motion.mp3"></audio>
-          <audio src="./assets/music/drown.mp3"></audio>
-          <audio src="./assets/music/caier.mp3"></audio>
           <div id="music-player" class="dark-block">
+            <audio src="./assets/music/windchime.mp3"></audio>
+            <audio src="./assets/music/motion.mp3"></audio>
+            <audio src="./assets/music/drown.mp3"></audio>
+            <audio src="./assets/music/caier.mp3"></audio>
+
+            <div id="song-count-wrp"></div>
             <div id="player-controls">
               <button
                 type="button"
