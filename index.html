@@ -102,10 +102,22 @@
             para alcançar os mais diversos sons e texturas.
           </p>
           <div id="music-player" class="dark-block">
-            <audio src="./assets/music/windchime.mp3"></audio>
-            <audio src="./assets/music/motion.mp3"></audio>
-            <audio src="./assets/music/drown.mp3"></audio>
-            <audio src="./assets/music/caier.mp3"></audio>
+            <audio
+              src="./assets/music/windchime.mp3"
+              onended="autoPlayNext()"
+            ></audio>
+            <audio
+              src="./assets/music/motion.mp3"
+              onended="autoPlayNext()"
+            ></audio>
+            <audio
+              src="./assets/music/drown.mp3"
+              onended="autoPlayNext()"
+            ></audio>
+            <audio
+              src="./assets/music/caier.mp3"
+              onended="autoPlayNext()"
+            ></audio>
 
             <div id="song-count-wrp"></div>
             <div id="player-controls">
@@ -169,7 +181,6 @@
         <h6 class="dim">Joinville - SC</h6>
       </div>
     </footer>
-    <script src="./main.js"></script>
     <script src="./player.js"></script>
   </body>
 </html>

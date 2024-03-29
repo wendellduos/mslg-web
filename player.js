@@ -117,3 +117,19 @@ function updateSongCountDisplay() {
     }
   }
 }
+
+function autoPlayNext() {
+  songs[current].currentTime = 0;
+
+  if (current < songs.length - 1) {
+    current++;
+
+    if (isPlaying) {
+      songs[current].play();
+    }
+  } else {
+    isPlaying = false;
+
+    controls.play.style.border = "solid 2px rgba(255, 255, 255, 0)";
+  }
+}
