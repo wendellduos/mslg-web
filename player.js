@@ -13,6 +13,18 @@ const songs = document.querySelectorAll("audio");
 
 let timelineProgress;
 
+const playerBtns = document.querySelectorAll(".player-btn");
+
+playerBtns.forEach((button) => {
+  button.addEventListener("mousedown", () => {
+    button.classList = "player-btn clicked";
+  });
+
+  button.addEventListener("mouseup", () => {
+    button.classList = "player-btn";
+  });
+});
+
 updateSongCountDisplay();
 
 // play-pause-btn
@@ -93,17 +105,15 @@ timeline.addEventListener("mousedown", (e) => {
 });
 
 function updateSongCountDisplay() {
-  document.getElementById("song-count-wrp").innerHTML = "";
+  const songCountWrp = document.getElementById("song-count-wrp");
+
+  songCountWrp.innerHTML = "";
 
   for (i = 0; i <= songs.length - 1; i++) {
     if (i === current) {
-      document.getElementById(
-        "song-count-wrp"
-      ).innerHTML += `<div class="song-count playing"></div>`;
+      songCountWrp.innerHTML += `<div class="song-count playing"></div>`;
     } else {
-      document.getElementById(
-        "song-count-wrp"
-      ).innerHTML += `<div class="song-count"></div>`;
+      songCountWrp.innerHTML += `<div class="song-count"></div>`;
     }
   }
 }
