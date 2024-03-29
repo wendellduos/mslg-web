@@ -61,7 +61,6 @@ p {
 }
 
 body {
-  height: 100vh;
   background-image: radial-gradient(circle at 100%, #200e25, #18141a);
 }
 
